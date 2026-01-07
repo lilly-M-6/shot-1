@@ -1,0 +1,66 @@
+{
+    "placed_probes": "",
+    "extended_probes": "",
+    "extensions": [
+        {
+            "signals": "Sum0",
+            "glitch_extension": [
+                "A0"
+            ]
+        },
+        {
+            "signals": "Sum1",
+            "glitch_extension": [
+                "A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p00",
+            "glitch_extension": [
+                "A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p01",
+            "glitch_extension": [
+                "A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p10",
+            "glitch_extension": [
+                "A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p11",
+            "glitch_extension": [
+                "A1"
+            ]
+        },
+        {
+            "signals": "\\dut._00_",
+            "glitch_extension": [
+                "\\dut.p00"
+            ]
+        },
+        {
+            "signals": "\\dut._01_",
+            "glitch_extension": [
+                "\\dut.p11"
+            ]
+        },
+        {
+            "signals": "Cout0",
+            "glitch_extension": [
+                "\\dut._00_"
+            ]
+        },
+        {
+            "signals": "Cout1",
+            "glitch_extension": [
+                "\\dut._01_"
+            ]
+        }
+    ]
+}

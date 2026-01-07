@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260106_180029",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_16",
+      "module_name": "half_adder",
+      "original_code": "module half_adder (\n    input a,\n    input b,\n    output sum,\n    output carry\n);\n\nassign sum = a ^ b;\nassign carry = a & b;\n\nendmodule",
+      "masked_code": "module half_adder_masked (\n    input a0,\n    input a1,\n    input b0,\n    input b1,\n    input rN,\n    output sum0,\n    output sum1,\n    output carry0,\n    output carry1\n);\n\nwire sum_temp0;\nwire sum_temp1;\nwire carry_temp0;\nwire carry_temp1;\n\nassign sum_temp0 = a0 ^ b0;\nassign sum_temp1 = a1 ^ b1;\n\nassign sum0 = sum_temp0;\nassign sum1 = sum_temp1;\n\nwire p00, p01, p10, p11;\n\nassign p00 = a0 & b0;\nassign p01 = a0 & b1;\nassign p10 = a1 & b0;\nassign p11 = a1 & b1;\n\nassign carry0 = p00 ^ p01 ^ rN;\nassign carry1 = p11 ^ p10 ^ rN;\n\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

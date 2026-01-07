@@ -1,0 +1,26 @@
+[2025-12-29 19:34:30] Successfully validated the settings file.
+[2025-12-29 19:34:30] Successfully read the library with name "custom".
+[2025-12-29 19:34:30] Successfully parsed 10 cells from the library.
+[2025-12-29 19:34:30] Successfully found buffer cell with identifier "BUFF" and others.
+[2025-12-29 19:34:30] Successfully read design file with topmodule "circuit"!
+[2025-12-29 19:34:30] Successfully matched 3 fresh mask signals (for rising edge) [{r0}, {i_b0}, {i_b1}].
+[2025-12-29 19:34:30] Successfully placed 87 possible probes in total.
+[2025-12-29 19:34:30] Successfully placed 12 possible extensions in total.
+[2025-12-29 19:34:30] Successfully initialized a univariate evaluation with 12 probing sets.
+[2025-12-29 19:34:30] Successfully set a batch of 12 probing sets.
+[2025-12-29 19:34:30] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:34:30] | #Standard Probes | #Extended Probes | #Probing Sets | Minimum #Probes per Set | Maximum #Probes per Set | Average #Probes per Set |
+[2025-12-29 19:34:30] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:34:30] |               12 |               12 |            12 |                       1 |                       2 |                1.666667 |
+[2025-12-29 19:34:30] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:34:30] --------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:34:30] | Elapsed Time |        Used Memory |       #Simulations | Probing Set with Highest Information Leakage |  -log10(p) |  Status |
+[2025-12-29 19:34:30] --------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        1024 / 8079 |                                      o_g1(2) |   0.756663 |    OKAY |
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        2048 / 8079 |                                      o_g1(2) |   0.696105 |    OKAY |
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        3072 / 8079 |                                      o_g0(2) |   0.416587 |    OKAY |
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        4096 / 8079 |                                      o_g0(2) |   0.166126 |    OKAY |
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        5120 / 8079 |                                      o_g1(2) |   0.501196 |    OKAY |
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        6144 / 8079 |                                      o_g1(2) |   0.585381 |    OKAY |
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        7168 / 8079 |                                      o_g1(2) |   1.269896 |    OKAY |
+[2025-12-29 19:34:30] |   0-00:00:00 |   0TB    0GB 018MB |        8192 / 8079 |                                      o_g1(2) |   1.507810 |    OKAY |

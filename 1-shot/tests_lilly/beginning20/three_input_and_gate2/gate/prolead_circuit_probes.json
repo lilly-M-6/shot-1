@@ -1,0 +1,88 @@
+{
+    "placed_probes": [
+        "o_out0(1)",
+        "o_out1(1)",
+        "o_out0(2)",
+        "o_out1(2)"
+    ],
+    "extended_probes": [
+        "o_out0(1)",
+        "o_out1(1)",
+        "o_out0(2)",
+        "o_out1(2)"
+    ],
+    "extensions": [
+        {
+            "signals": "\\dut.p00",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p01",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p10",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p11",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p20",
+            "glitch_extension": [
+                "\\dut.p00"
+            ]
+        },
+        {
+            "signals": "\\dut.p21",
+            "glitch_extension": [
+                "\\dut.p01"
+            ]
+        },
+        {
+            "signals": "\\dut.p30",
+            "glitch_extension": [
+                "\\dut.p10"
+            ]
+        },
+        {
+            "signals": "\\dut.p31",
+            "glitch_extension": [
+                "\\dut.p11"
+            ]
+        },
+        {
+            "signals": "\\dut._00_",
+            "glitch_extension": [
+                "\\dut.p20"
+            ]
+        },
+        {
+            "signals": "\\dut._01_",
+            "glitch_extension": [
+                "\\dut.p30"
+            ]
+        },
+        {
+            "signals": "out0_w",
+            "glitch_extension": [
+                "\\dut._00_"
+            ]
+        },
+        {
+            "signals": "out1_w",
+            "glitch_extension": [
+                "\\dut._01_"
+            ]
+        }
+    ]
+}

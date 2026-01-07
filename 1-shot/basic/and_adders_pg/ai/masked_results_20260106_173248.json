@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260106_173248",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_7",
+      "module_name": "AND_gate",
+      "original_code": "module AND_gate (\n    input a,\n    input b,\n    output out\n);\n\nassign out = a & b;\n\nendmodule",
+      "masked_code": "module AND_gate_masked (\n    input a0,\n    input a1,\n    input b0,\n    input b1,\n    input rN,\n    output out0,\n    output out1\n);\n\nwire p00, p01, p10, p11;\n\nassign p00 = a0 & b0;\nassign p01 = a0 & b1;\nassign p10 = a1 & b0;\nassign p11 = a1 & b1;\n\nassign out0 = p00 ^ p01 ^ rN;\nassign out1 = p11 ^ p10 ^ rN;\n\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

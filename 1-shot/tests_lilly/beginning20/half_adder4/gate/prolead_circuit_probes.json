@@ -1,0 +1,84 @@
+{
+    "placed_probes": [
+        "o_CARRY0(1)",
+        "o_CARRY1(1)",
+        "o_SUM0(1)",
+        "o_SUM1(1)",
+        "o_CARRY0(2)",
+        "o_CARRY1(2)",
+        "o_SUM0(2)",
+        "o_SUM1(2)"
+    ],
+    "extended_probes": [
+        "o_CARRY0(1)",
+        "o_CARRY1(1)",
+        "o_SUM0(1)",
+        "o_SUM1(1)",
+        "o_CARRY0(2)",
+        "o_CARRY1(2)",
+        "o_SUM0(2)",
+        "o_SUM1(2)"
+    ],
+    "extensions": [
+        {
+            "signals": "SUM0_w",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "SUM1_w",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p00",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p01",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p10",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p11",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut._00_",
+            "glitch_extension": [
+                "\\dut.p00"
+            ]
+        },
+        {
+            "signals": "\\dut._01_",
+            "glitch_extension": [
+                "\\dut.p11"
+            ]
+        },
+        {
+            "signals": "CARRY0_w",
+            "glitch_extension": [
+                "\\dut._00_"
+            ]
+        },
+        {
+            "signals": "CARRY1_w",
+            "glitch_extension": [
+                "\\dut._01_"
+            ]
+        }
+    ]
+}

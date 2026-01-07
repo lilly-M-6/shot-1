@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260106_211116",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_1",
+      "module_name": "top_module",
+      "original_code": "module top_module (\n    input too_cold,\n    input too_hot,\n    input mode,\n    input fan_on,\n    output heater,\n    output aircon,\n    output fan\n); \n    assign heater=mode&too_cold;\n    assign aircon=~mode&too_hot;\n    assign fan=heater|aircon|fan_on;\nendmodule",
+      "masked_code": "module top_module_masked (\n    input too_cold0,\n    input too_cold1,\n    input too_hot0,\n    input too_hot1,\n    input mode0,\n    input mode1,\n    input fan_on0,\n    input fan_on1,\n    input r0,\n    input r1,\n    input r2,\n    input r3,\n    output heater0,\n    output heater1,\n    output aircon0,\n    output aircon1,\n    output fan0,\n    output fan1\n);\nwire not_mode0;\nwire not_mode1;\nassign not_mode0 = ~mode0;\nassign not_mode1 = ~mode1;\n\nwire p00_0;\nwire p01_0;\nwire p10_0;\nwire p11_0;\nassign p00_0 = mode0 & too_cold0;\nassign p01_0 = mode0 & too_cold1;\nassign p10_0 = mode1 & too_cold0;\nassign p11_0 = mode1 & too_cold1;\nwire h_sh0;\nwire h_sh1;\nassign h_sh0 = p00_0 ^ p01_0 ^ r0;\nassign h_sh1 = p11_0 ^ p10_0 ^ r0;\n\nwire p00_1;\nwire p01_1;\nwire p10_1;\nwire p11_1;\nassign p00_1 = not_mode0 & too_hot0;\nassign p01_1 = not_mode0 & too_hot1;\nassign p10_1 = not_mode1 & too_hot0;\nassign p11_1 = not_mode1 & too_hot1;\nwire a_sh0;\nwire a_sh1;\nassign a_sh0 = p00_1 ^ p01_1 ^ r1;\nassign a_sh1 = p11_1 ^ p10_1 ^ r1;\n\nwire p00_2;\nwire p01_2;\nwire p10_2;\nwire p11_2;\nassign p00_2 = h_sh0 & a_sh0;\nassign p01_2 = h_sh0 & a_sh1;\nassign p10_2 = h_sh1 & a_sh0;\nassign p11_2 = h_sh1 & a_sh1;\nwire ha_and0;\nwire ha_and1;\nassign ha_and0 = p00_2 ^ p01_2 ^ r2;\nassign ha_and1 = p11_2 ^ p10_2 ^ r2;\n\nwire t1_0;\nwire t1_1;\nassign t1_0 = h_sh0 ^ a_sh0 ^ ha_and0;\nassign t1_1 = h_sh1 ^ a_sh1 ^ ha_and1;\n\nwire p00_3;\nwire p01_3;\nwire p10_3;\nwire p11_3;\nassign p00_3 = t1_0 & fan_on0;\nassign p01_3 = t1_0 & fan_on1;\nassign p10_3 = t1_1 & fan_on0;\nassign p11_3 = t1_1 & fan_on1;\nwire t1f_and0;\nwire t1f_and1;\nassign t1f_and0 = p00_3 ^ p01_3 ^ r3;\nassign t1f_and1 = p11_3 ^ p10_3 ^ r3;\n\nwire fan_sh0;\nwire fan_sh1;\nassign fan_sh0 = t1_0 ^ fan_on0 ^ t1f_and0;\nassign fan_sh1 = t1_1 ^ fan_on1 ^ t1f_and1;\n\nassign heater0 = h_sh0;\nassign heater1 = h_sh1;\nassign aircon0 = a_sh0;\nassign aircon1 = a_sh1;\nassign fan0 = fan_sh0;\nassign fan1 = fan_sh1;\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[2026-01-07 10:57:22] Successfully validated the settings file.
+[2026-01-07 10:57:22] Successfully read the library with name "custom".
+[2026-01-07 10:57:22] Successfully parsed 10 cells from the library.
+[2026-01-07 10:57:22] Successfully found buffer cell with identifier "BUFF" and others.
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Signal "~mode0" not found!

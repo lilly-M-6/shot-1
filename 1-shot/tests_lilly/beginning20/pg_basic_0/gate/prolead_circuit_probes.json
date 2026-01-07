@@ -1,0 +1,176 @@
+{
+    "placed_probes": [
+        "a0_r(1)",
+        "a1_r(1)",
+        "b0_r(1)",
+        "b1_r(1)",
+        "g0(1)",
+        "g1(1)",
+        "p0(1)",
+        "p1(1)",
+        "r0_r(1)",
+        "a0_r(2)",
+        "a1_r(2)",
+        "b0_r(2)",
+        "b1_r(2)",
+        "g0(2)",
+        "g1(2)",
+        "p0(2)",
+        "p1(2)",
+        "r0_r(2)",
+        "a0_r(3)",
+        "a1_r(3)",
+        "b0_r(3)",
+        "b1_r(3)",
+        "g0(3)",
+        "g1(3)",
+        "p0(3)",
+        "p1(3)",
+        "r0_r(3)"
+    ],
+    "extended_probes": [
+        "a0_r(1)",
+        "a1_r(1)",
+        "b0_r(1)",
+        "b1_r(1)",
+        "g0(1)",
+        "g1(1)",
+        "p0(1)",
+        "p1(1)",
+        "r0_r(1)",
+        "a0_r(2)",
+        "a1_r(2)",
+        "b0_r(2)",
+        "b1_r(2)",
+        "g0(2)",
+        "g1(2)",
+        "p0(2)",
+        "p1(2)",
+        "r0_r(2)",
+        "a0_r(3)",
+        "a1_r(3)",
+        "b0_r(3)",
+        "b1_r(3)",
+        "g0(3)",
+        "g1(3)",
+        "p0(3)",
+        "p1(3)",
+        "r0_r(3)"
+    ],
+    "extensions": [
+        {
+            "signals": "_00_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_01_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_02_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_03_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_04_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_05_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_06_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_07_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "_08_",
+            "glitch_extension": [
+                "rst"
+            ]
+        },
+        {
+            "signals": "p0_w",
+            "glitch_extension": [
+                "a0_r"
+            ]
+        },
+        {
+            "signals": "p1_w",
+            "glitch_extension": [
+                "a1_r"
+            ]
+        },
+        {
+            "signals": "\\dut.g0_temp0",
+            "glitch_extension": [
+                "a0_r"
+            ]
+        },
+        {
+            "signals": "\\dut.g0_temp1",
+            "glitch_extension": [
+                "a0_r"
+            ]
+        },
+        {
+            "signals": "\\dut.g1_temp0",
+            "glitch_extension": [
+                "a1_r"
+            ]
+        },
+        {
+            "signals": "\\dut.g1_temp1",
+            "glitch_extension": [
+                "a1_r"
+            ]
+        },
+        {
+            "signals": "\\dut._00_",
+            "glitch_extension": [
+                "\\dut.g0_temp0"
+            ]
+        },
+        {
+            "signals": "\\dut._01_",
+            "glitch_extension": [
+                "\\dut.g1_temp1"
+            ]
+        },
+        {
+            "signals": "g0_w",
+            "glitch_extension": [
+                "\\dut._00_"
+            ]
+        },
+        {
+            "signals": "g1_w",
+            "glitch_extension": [
+                "\\dut._01_"
+            ]
+        }
+    ]
+}

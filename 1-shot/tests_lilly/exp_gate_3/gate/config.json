@@ -1,0 +1,127 @@
+{
+    "performance": {
+        "max_number_of_threads": "half",
+        "compact_distributions": true
+    },
+    "simulation": {
+        "groups": [
+            "2'b00",
+            "2'b01",
+            "2'b10",
+            "2'b11"
+        ],
+        "number_of_clock_cycles": 3,
+        "always_random_inputs": [
+            "r0",
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8"
+        ],
+        "output_shares": [
+            "X0",
+            "X1",
+            "XBAR0",
+            "XBAR1"
+        ],
+        "input_sequence": [
+            {
+                "signals": [
+                    {
+                        "name": "A0",
+                        "value": "group_in0[0]"
+                    },
+                    {
+                        "name": "A1",
+                        "value": "group_in1[0]"
+                    },
+                    {
+                        "name": "B0",
+                        "value": "group_in0[1]"
+                    },
+                    {
+                        "name": "B1",
+                        "value": "group_in1[1]"
+                    },
+                    {
+                        "name": "C0",
+                        "value": "group_in0[2]"
+                    },
+                    {
+                        "name": "C1",
+                        "value": "group_in1[2]"
+                    },
+                    {
+                        "name": "D0",
+                        "value": "group_in0[3]"
+                    },
+                    {
+                        "name": "D1",
+                        "value": "group_in1[3]"
+                    },
+                    {
+                        "name": "E0",
+                        "value": "group_in0[4]"
+                    },
+                    {
+                        "name": "E1",
+                        "value": "group_in1[4]"
+                    },
+                    {
+                        "name": "F0",
+                        "value": "group_in0[5]"
+                    },
+                    {
+                        "name": "F1",
+                        "value": "group_in1[5]"
+                    },
+                    {
+                        "name": "G0",
+                        "value": "group_in0[6]"
+                    },
+                    {
+                        "name": "G1",
+                        "value": "group_in1[6]"
+                    },
+                    {
+                        "name": "H0",
+                        "value": "group_in0[7]"
+                    },
+                    {
+                        "name": "H1",
+                        "value": "group_in1[7]"
+                    },
+                    {
+                        "name": "I0",
+                        "value": "group_in0[8]"
+                    },
+                    {
+                        "name": "I1",
+                        "value": "group_in1[8]"
+                    },
+                    {
+                        "name": "J0",
+                        "value": "group_in0[9]"
+                    },
+                    {
+                        "name": "J1",
+                        "value": "group_in1[9]"
+                    }
+                ]
+            }
+        ],
+        "number_of_simulations": 65536,
+        "number_of_simulations_per_step": 2048
+    },
+    "hardware": {
+        "clock_signal_name": "clk"
+    },
+    "side_channel_analysis": {
+        "order": 1,
+        "relaxed_model": false
+    }
+}

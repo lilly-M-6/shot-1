@@ -1,0 +1,29 @@
+write(2, "[2025-12-28 20:32:10] Successful"..., 63[2025-12-28 20:32:10] Successfully validated the settings file.) = 63
+write(2, "\n", 1
+)                       = 1
+write(2, "[2025-12-28 20:32:10] Successful"..., 71[2025-12-28 20:32:10] Successfully read the library with name "custom".) = 71
+write(2, "\n", 1
+)                       = 1
+write(2, "[2025-12-28 20:32:10] Successful"..., 68[2025-12-28 20:32:10] Successfully parsed 10 cells from the library.) = 68
+write(2, "\n", 1
+)                       = 1
+write(2, "[2025-12-28 20:32:10] Successful"..., 87[2025-12-28 20:32:10] Successfully found buffer cell with identifier "BUFF" and others.) = 87
+write(2, "\n", 1
+)                       = 1
+write(2, "[2025-12-28 20:32:10] Successful"..., 77[2025-12-28 20:32:10] Successfully read design file with topmodule "circuit"!) = 77
+write(2, "\n", 1
+)                       = 1
+write(2, "[2025-12-28 20:32:10] Successful"..., 90[2025-12-28 20:32:10] Successfully matched 1 fresh mask signals (for rising edge) [{r0}].
+) = 90
+write(2, "[2025-12-28 20:32:10] Successful"..., 70[2025-12-28 20:32:10] Successfully placed 72 possible probes in total.) = 70
+write(2, "\n", 1
+)                       = 1
+write(2, "[2025-12-28 20:32:10] Successful"..., 73[2025-12-28 20:32:10] Successfully placed 0 possible extensions in total.) = 73
+write(2, "\n", 1
+)                       = 1
+write(3, "{\n    \"placed_probes\": \"\",\n    \""..., 1365) = 1365
+write(2, "[2025-12-28 20:32:10] Successful"..., 91[2025-12-28 20:32:10] Successfully initialized a univariate evaluation with 3 probing sets.) = 91
+write(2, "\n", 1
+)                       = 1
+--- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0xfffffffffffffff8} ---
++++ killed by SIGSEGV (core dumped) +++

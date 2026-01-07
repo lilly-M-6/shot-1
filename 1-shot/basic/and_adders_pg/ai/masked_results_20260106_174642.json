@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260106_174642",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_11",
+      "module_name": "three_input_and_gate",
+      "original_code": "module three_input_and_gate (\n    input a,\n    input b,\n    input c,\n    output out\n);\n\nassign out = a & b & c;\n\nendmodule",
+      "masked_code": "module three_input_and_gate_masked (\n    input a0,\n    input a1,\n    input b0,\n    input b1,\n    input c0,\n    input c1,\n    input rN0,\n    input rN1,\n    output out0,\n    output out1\n);\n\nwire p00, p01, p10, p11;\nwire p20, p21, p30, p31;\n\nassign p00 = a0 & b0;\nassign p01 = a0 & b1;\nassign p10 = a1 & b0;\nassign p11 = a1 & b1;\n\nassign p20 = p00 & c0;\nassign p21 = p01 & c0;\nassign p30 = p10 & c1;\nassign p31 = p11 & c1;\n\nassign out0 = p20 ^ p21 ^ rN0;\nassign out1 = p31 ^ p30 ^ rN1;\n\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

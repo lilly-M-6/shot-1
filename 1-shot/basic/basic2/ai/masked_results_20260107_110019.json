@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260107_110019",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_3",
+      "module_name": "top_module",
+      "original_code": "module top_module(\n    input a,\n    input b,\n    input c,\n    input d,\n    output out,\n    output out_n   ); \n    \n    wire ab;\n    wire cd;\n    wire abcd;\n    \n    assign ab = a&b;\n    assign cd = c&d;\n    assign abcd = ab|cd;\n    \n    assign out = abcd;\n    assign out_n = ~abcd;\n\nendmodule",
+      "masked_code": "module top_module_masked(\n    input a0,\n    input a1,\n    input b0,\n    input b1,\n    input c0,\n    input c1,\n    input d0,\n    input d1,\n    input r0,\n    input r1,\n    input r2,\n    output out0,\n    output out1,\n    output out_n0,\n    output out_n1\n);\n\nwire p00_ab;\nwire p01_ab;\nwire p10_ab;\nwire p11_ab;\nwire ab0;\nwire ab1;\n\nassign p00_ab = a0 & b0;\nassign p01_ab = a0 & b1;\nassign p10_ab = a1 & b0;\nassign p11_ab = a1 & b1;\nassign ab0 = p00_ab ^ p01_ab ^ r0;\nassign ab1 = p11_ab ^ p10_ab ^ r0;\n\nwire p00_cd;\nwire p01_cd;\nwire p10_cd;\nwire p11_cd;\nwire cd0;\nwire cd1;\n\nassign p00_cd = c0 & d0;\nassign p01_cd = c0 & d1;\nassign p10_cd = c1 & d0;\nassign p11_cd = c1 & d1;\nassign cd0 = p00_cd ^ p01_cd ^ r1;\nassign cd1 = p11_cd ^ p10_cd ^ r1;\n\nwire p00_abcd_and;\nwire p01_abcd_and;\nwire p10_abcd_and;\nwire p11_abcd_and;\nwire and_ab_cd_0;\nwire and_ab_cd_1;\n\nassign p00_abcd_and = ab0 & cd0;\nassign p01_abcd_and = ab0 & cd1;\nassign p10_abcd_and = ab1 & cd0;\nassign p11_abcd_and = ab1 & cd1;\nassign and_ab_cd_0 = p00_abcd_and ^ p01_abcd_and ^ r2;\nassign and_ab_cd_1 = p11_abcd_and ^ p10_abcd_and ^ r2;\n\nwire abcd0;\nwire abcd1;\n\nassign abcd0 = ab0 ^ cd0 ^ and_ab_cd_0;\nassign abcd1 = ab1 ^ cd1 ^ and_ab_cd_1;\n\nassign out0 = abcd0;\nassign out1 = abcd1;\nassign out_n0 = ~abcd0;\nassign out_n1 = ~abcd1;\n\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

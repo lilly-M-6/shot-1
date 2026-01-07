@@ -1,0 +1,66 @@
+{
+    "placed_probes": "",
+    "extended_probes": "",
+    "extensions": [
+        {
+            "signals": "o_p0",
+            "glitch_extension": [
+                "i_a0"
+            ]
+        },
+        {
+            "signals": "o_p1",
+            "glitch_extension": [
+                "i_a1"
+            ]
+        },
+        {
+            "signals": "\\uut.t00",
+            "glitch_extension": [
+                "i_a0"
+            ]
+        },
+        {
+            "signals": "\\uut.t01",
+            "glitch_extension": [
+                "i_a0"
+            ]
+        },
+        {
+            "signals": "\\uut.t10",
+            "glitch_extension": [
+                "i_a1"
+            ]
+        },
+        {
+            "signals": "\\uut.t11",
+            "glitch_extension": [
+                "i_a1"
+            ]
+        },
+        {
+            "signals": "o_g1",
+            "glitch_extension": [
+                "\\uut.t11"
+            ]
+        },
+        {
+            "signals": "\\uut._00_",
+            "glitch_extension": [
+                "\\uut.t00"
+            ]
+        },
+        {
+            "signals": "\\uut._01_",
+            "glitch_extension": [
+                "\\uut._00_"
+            ]
+        },
+        {
+            "signals": "o_g0",
+            "glitch_extension": [
+                "\\uut._01_"
+            ]
+        }
+    ]
+}

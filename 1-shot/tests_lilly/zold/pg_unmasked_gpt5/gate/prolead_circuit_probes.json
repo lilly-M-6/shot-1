@@ -1,0 +1,32 @@
+{
+    "placed_probes": [
+        "o_g(1)",
+        "o_p(1)",
+        "o_g(2)",
+        "o_p(2)",
+        "o_g(3)",
+        "o_p(3)"
+    ],
+    "extended_probes": [
+        "o_g(1)",
+        "o_p(1)",
+        "o_g(2)",
+        "o_p(2)",
+        "o_g(3)",
+        "o_p(3)"
+    ],
+    "extensions": [
+        {
+            "signals": "\\uut.g",
+            "glitch_extension": [
+                "i_a"
+            ]
+        },
+        {
+            "signals": "\\uut.p",
+            "glitch_extension": [
+                "i_a"
+            ]
+        }
+    ]
+}

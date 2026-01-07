@@ -1,0 +1,26 @@
+[2025-12-29 19:27:52] Successfully validated the settings file.
+[2025-12-29 19:27:52] Successfully read the library with name "custom".
+[2025-12-29 19:27:52] Successfully parsed 10 cells from the library.
+[2025-12-29 19:27:52] Successfully found buffer cell with identifier "BUFF" and others.
+[2025-12-29 19:27:52] Successfully read design file with topmodule "circuit"!
+[2025-12-29 19:27:52] Successfully matched 1 fresh mask signals (for rising edge) [{i_b}].
+[2025-12-29 19:27:52] Successfully placed 33 possible probes in total.
+[2025-12-29 19:27:52] Successfully placed 6 possible extensions in total.
+[2025-12-29 19:27:52] Successfully initialized a univariate evaluation with 6 probing sets.
+[2025-12-29 19:27:52] Successfully set a batch of 6 probing sets.
+[2025-12-29 19:27:52] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:27:52] | #Standard Probes | #Extended Probes | #Probing Sets | Minimum #Probes per Set | Maximum #Probes per Set | Average #Probes per Set |
+[2025-12-29 19:27:52] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:27:52] |                6 |                6 |             6 |                       1 |                       2 |                1.666667 |
+[2025-12-29 19:27:52] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:27:52] --------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:27:52] | Elapsed Time |        Used Memory |       #Simulations | Probing Set with Highest Information Leakage |  -log10(p) |  Status |
+[2025-12-29 19:27:52] --------------------------------------------------------------------------------------------------------------------------------
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        1024 / 8079 |                                       o_g(3) | 307.765955 | LEAKAGE |
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        2048 / 8079 |                                       o_g(3) |        inf | LEAKAGE |
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        3072 / 8079 |                                       o_g(3) |        inf | LEAKAGE |
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        4096 / 8079 |                                       o_g(3) |        inf | LEAKAGE |
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        5120 / 8079 |                                       o_g(3) |        inf | LEAKAGE |
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        6144 / 8079 |                                       o_g(3) |        inf | LEAKAGE |
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        7168 / 8079 |                                       o_g(3) |        inf | LEAKAGE |
+[2025-12-29 19:27:52] |   0-00:00:00 |   0TB    0GB 018MB |        8192 / 8079 |                                       o_g(3) |        inf | LEAKAGE |

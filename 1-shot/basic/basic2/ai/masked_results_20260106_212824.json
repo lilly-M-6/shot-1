@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260106_212824",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_2",
+      "module_name": "top_module",
+      "original_code": "module top_module (\n    input too_cold,\n    input too_hot,\n    input mode,\n    input fan_on,\n    output heater,\n    output aircon,\n    output fan\n);\n    wire w1,w2;\n    assign w1 = mode&too_cold;\n    assign w2 = ~mode&too_hot;\n    assign heater = w1;\n    assign aircon = w2;\n    assign fan = fan_on | w1 | w2;\n\nendmodule",
+      "masked_code": "module top_module_masked (\n    input too_cold0,\n    input too_cold1,\n    input too_hot0,\n    input too_hot1,\n    input mode0,\n    input mode1,\n    input fan_on0,\n    input fan_on1,\n    input r0,\n    input r1,\n    input r2,\n    input r3,\n    output heater0,\n    output heater1,\n    output aircon0,\n    output aircon1,\n    output fan0,\n    output fan1\n);\n    wire not_mode0;\n    wire not_mode1;\n\n    wire w1_0;\n    wire w1_1;\n    wire w2_0;\n    wire w2_1;\n\n    wire p1_00;\n    wire p1_01;\n    wire p1_10;\n    wire p1_11;\n\n    wire p2_00;\n    wire p2_01;\n    wire p2_10;\n    wire p2_11;\n\n    wire p3_00;\n    wire p3_01;\n    wire p3_10;\n    wire p3_11;\n\n    wire p4_00;\n    wire p4_01;\n    wire p4_10;\n    wire p4_11;\n\n    wire and3_c0;\n    wire and3_c1;\n    wire and4_c0;\n    wire and4_c1;\n\n    assign not_mode0 = ~mode0;\n    assign not_mode1 = ~mode1;\n\n    assign p1_00 = mode0 & too_cold0;\n    assign p1_01 = mode0 & too_cold1;\n    assign p1_10 = mode1 & too_cold0;\n    assign p1_11 = mode1 & too_cold1;\n    assign w1_0 = p1_00 ^ p1_01 ^ r0;\n    assign w1_1 = p1_11 ^ p1_10 ^ r0;\n\n    assign p2_00 = not_mode0 & too_hot0;\n    assign p2_01 = not_mode0 & too_hot1;\n    assign p2_10 = not_mode1 & too_hot0;\n    assign p2_11 = not_mode1 & too_hot1;\n    assign w2_0 = p2_00 ^ p2_01 ^ r1;\n    assign w2_1 = p2_11 ^ p2_10 ^ r1;\n\n    assign p3_00 = fan_on0 & w1_0;\n    assign p3_01 = fan_on0 & w1_1;\n    assign p3_10 = fan_on1 & w1_0;\n    assign p3_11 = fan_on1 & w1_1;\n    assign and3_c0 = p3_00 ^ p3_01 ^ r2;\n    assign and3_c1 = p3_11 ^ p3_10 ^ r2;\n\n    wire fo_0;\n    wire fo_1;\n    assign fo_0 = fan_on0 ^ w1_0 ^ and3_c0;\n    assign fo_1 = fan_on1 ^ w1_1 ^ and3_c1;\n\n    assign p4_00 = fo_0 & w2_0;\n    assign p4_01 = fo_0 & w2_1;\n    assign p4_10 = fo_1 & w2_0;\n    assign p4_11 = fo_1 & w2_1;\n    assign and4_c0 = p4_00 ^ p4_01 ^ r3;\n    assign and4_c1 = p4_11 ^ p4_10 ^ r3;\n\n    assign heater0 = w1_0;\n    assign heater1 = w1_1;\n\n    assign aircon0 = w2_0;\n    assign aircon1 = w2_1;\n\n    assign fan0 = fo_0 ^ w2_0 ^ and4_c0;\n    assign fan1 = fo_1 ^ w2_1 ^ and4_c1;\n\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

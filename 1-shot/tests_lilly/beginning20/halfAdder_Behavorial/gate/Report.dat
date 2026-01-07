@@ -1,0 +1,9 @@
+[2026-01-06 17:15:12] Successfully validated the settings file.
+[2026-01-06 17:15:12] Successfully read the library with name "custom".
+[2026-01-06 17:15:12] Successfully parsed 10 cells from the library.
+[2026-01-06 17:15:12] Successfully found buffer cell with identifier "BUFF" and others.
+[2026-01-06 17:15:12] Successfully read design file with topmodule "circuit"!
+[2026-01-06 17:15:12] Successfully matched 1 fresh mask signals (for rising edge) [{rN}].
+[2026-01-06 17:15:12] Successfully placed 72 possible probes in total.
+[2026-01-06 17:15:12] Successfully placed 0 possible extensions in total.
+[2026-01-06 17:15:12] Successfully initialized a univariate evaluation with 3 probing sets.

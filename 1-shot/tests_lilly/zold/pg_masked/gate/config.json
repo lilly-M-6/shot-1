@@ -1,0 +1,55 @@
+{
+    "performance": {
+        "max_number_of_threads": "half",
+        "compact_distributions": true
+    },
+    "simulation": {
+        "groups": [
+            "2'b00",
+            "2'b01",
+            "2'b10",
+            "2'b11"
+        ],
+        "number_of_clock_cycles": 3,
+        "always_random_inputs": [
+            "r0"
+        ],
+        "output_shares": [
+            "o_p0",
+            "o_p1",
+            "o_g0",
+            "o_g1"
+        ],
+        "input_sequence": [
+            {
+                "signals": [
+                    {
+                        "name": "i_a0",
+                        "value": "group_in0[0]"
+                    },
+                    {
+                        "name": "i_a1",
+                        "value": "group_in1[0]"
+                    },
+                    {
+                        "name": "i_b0",
+                        "value": "group_in0[1]"
+                    },
+                    {
+                        "name": "i_b1",
+                        "value": "group_in1[1]"
+                    }
+                ]
+            }
+        ],
+        "number_of_simulations": 8192,
+        "number_of_simulations_per_step": 1024
+    },
+    "hardware": {
+        "clock_signal_name": "clk"
+    },
+    "side_channel_analysis": {
+        "order": 1,
+        "relaxed_model": false
+    }
+}

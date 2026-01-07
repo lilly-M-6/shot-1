@@ -1,0 +1,96 @@
+{
+    "placed_probes": [
+        "o_Carry0(1)",
+        "o_Carry1(1)",
+        "o_Sum0(1)",
+        "o_Sum1(1)",
+        "o_Carry0(2)",
+        "o_Carry1(2)",
+        "o_Sum0(2)",
+        "o_Sum1(2)"
+    ],
+    "extended_probes": [
+        "o_Carry0(1)",
+        "o_Carry1(1)",
+        "o_Sum0(1)",
+        "o_Sum1(1)",
+        "o_Carry0(2)",
+        "o_Carry1(2)",
+        "o_Sum0(2)",
+        "o_Sum1(2)"
+    ],
+    "extensions": [
+        {
+            "signals": "Sum0_w",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "Sum1_w",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p00",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p01",
+            "glitch_extension": [
+                "i_A0"
+            ]
+        },
+        {
+            "signals": "\\dut.p10",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut.p11",
+            "glitch_extension": [
+                "i_A1"
+            ]
+        },
+        {
+            "signals": "\\dut._00_",
+            "glitch_extension": [
+                "\\dut.p00"
+            ]
+        },
+        {
+            "signals": "\\dut._01_",
+            "glitch_extension": [
+                "\\dut.p11"
+            ]
+        },
+        {
+            "signals": "\\dut.Sum_temp0",
+            "glitch_extension": [
+                "Sum0_w"
+            ]
+        },
+        {
+            "signals": "\\dut.Sum_temp1",
+            "glitch_extension": [
+                "Sum1_w"
+            ]
+        },
+        {
+            "signals": "Carry0_w",
+            "glitch_extension": [
+                "\\dut._00_"
+            ]
+        },
+        {
+            "signals": "Carry1_w",
+            "glitch_extension": [
+                "\\dut._01_"
+            ]
+        }
+    ]
+}

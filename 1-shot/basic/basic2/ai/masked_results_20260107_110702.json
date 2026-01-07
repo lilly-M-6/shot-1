@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260107_110702",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_5",
+      "module_name": "black",
+      "original_code": "module black(\n  input  wire i_pj,\n  input  wire i_gj,\n  input  wire i_pk,\n  input  wire i_gk,\n  output wire o_g,\n  output wire o_p\n);\n\nassign o_g = i_gk | (i_gj & i_pk);\nassign o_p = i_pk & i_pj;\n\nendmodule",
+      "masked_code": "module black_masked(\n  input  wire i_pj0,\n  input  wire i_pj1,\n  input  wire i_gj0,\n  input  wire i_gj1,\n  input  wire i_pk0,\n  input  wire i_pk1,\n  input  wire i_gk0,\n  input  wire i_gk1,\n  input  wire r0,\n  input  wire r1,\n  input  wire r2,\n  output wire o_g0,\n  output wire o_g1,\n  output wire o_p0,\n  output wire o_p1\n);\n\nwire w1_p00;\nwire w1_p01;\nwire w1_p10;\nwire w1_p11;\nwire t1_0;\nwire t1_1;\n\nwire w2_p00;\nwire w2_p01;\nwire w2_p10;\nwire w2_p11;\nwire t2_0;\nwire t2_1;\n\nwire w3_p00;\nwire w3_p01;\nwire w3_p10;\nwire w3_p11;\nwire p_out_0;\nwire p_out_1;\n\nassign w1_p00 = i_gj0 & i_pk0;\nassign w1_p01 = i_gj0 & i_pk1;\nassign w1_p10 = i_gj1 & i_pk0;\nassign w1_p11 = i_gj1 & i_pk1;\nassign t1_0 = w1_p00 ^ w1_p01 ^ r0;\nassign t1_1 = w1_p11 ^ w1_p10 ^ r0;\n\nassign w2_p00 = i_gk0 & t1_0;\nassign w2_p01 = i_gk0 & t1_1;\nassign w2_p10 = i_gk1 & t1_0;\nassign w2_p11 = i_gk1 & t1_1;\nassign t2_0 = w2_p00 ^ w2_p01 ^ r1;\nassign t2_1 = w2_p11 ^ w2_p10 ^ r1;\n\nassign w3_p00 = i_pk0 & i_pj0;\nassign w3_p01 = i_pk0 & i_pj1;\nassign w3_p10 = i_pk1 & i_pj0;\nassign w3_p11 = i_pk1 & i_pj1;\nassign p_out_0 = w3_p00 ^ w3_p01 ^ r2;\nassign p_out_1 = w3_p11 ^ w3_p10 ^ r2;\n\nassign o_g0 = i_gk0 ^ t1_0 ^ t2_0;\nassign o_g1 = i_gk1 ^ t1_1 ^ t2_1;\nassign o_p0 = p_out_0;\nassign o_p1 = p_out_1;\n\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

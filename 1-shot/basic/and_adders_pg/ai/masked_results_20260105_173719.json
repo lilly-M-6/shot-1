@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260105_173719",
+  "model": "gpt-5-mini",
+  "modules": [
+    {
+      "id": "unpyr_1",
+      "module_name": "pg",
+      "original_code": "module pg(\n  input  wire i_a,\n  input  wire i_b,\n  output wire o_p,\n  output wire o_g\n);\n\nassign o_p = i_a ^ i_b;\nassign o_g = i_a & i_b;\n\nendmodule",
+      "masked_code": "module pg_masked(\n  input  wire i_a0,\n  input  wire i_a1,\n  input  wire i_b0,\n  input  wire i_b1,\n  input  wire rN,\n  output wire o_p0,\n  output wire o_p1,\n  output wire o_g0,\n  output wire o_g1\n);\n\nassign o_p0 = i_a0 ^ i_b0;\nassign o_p1 = i_a1 ^ i_b1;\n\nwire g0_temp0, g0_temp1, g1_temp0, g1_temp1;\n\nassign g0_temp0 = i_a0 & i_b0;\nassign g0_temp1 = i_a0 & i_b1;\nassign g1_temp0 = i_a1 & i_b0;\nassign g1_temp1 = i_a1 & i_b1;\n\nassign o_g0 = g0_temp0 ^ g0_temp1 ^ rN;\nassign o_g1 = g1_temp1 ^ g1_temp0 ^ rN;\n\nendmodule",
+      "finish_reason": "stop"
+    }
+  ]
+}

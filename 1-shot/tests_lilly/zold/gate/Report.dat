@@ -1,0 +1,28 @@
+[2025-11-24 22:44:46] Successfully validated the settings file.
+[2025-11-24 22:44:46] Successfully read the library with name "custom".
+[2025-11-24 22:44:46] Successfully parsed 10 cells from the library.
+[2025-11-24 22:44:46] Successfully found buffer cell with identifier "BUFF" and others.
+[2025-11-24 22:44:46] Successfully read design file with topmodule "circuit"!
+[2025-11-24 22:44:46] Successfully matched 2 fresh mask signals (for rising edge) [{r[0]}, {r[1]}].
+[2025-11-24 22:44:46] Successfully placed 93 possible probes in total.
+[2025-11-24 22:44:46] Successfully placed 24 possible extensions in total.
+[2025-11-24 22:44:46] Successfully detected 0 probes that are conditionally extended.
+[2025-11-24 22:44:46] Successfully specified 0 probe-extension conditions.
+[2025-11-24 22:44:46] Successfully initialized a univariate evaluation with 24 probing sets.
+[2025-11-24 22:44:46] Successfully set a batch of 24 probing sets.
+[2025-11-24 22:44:46] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-11-24 22:44:46] | #Standard Probes | #Extended Probes | #Probing Sets | Minimum #Probes per Set | Maximum #Probes per Set | Average #Probes per Set |
+[2025-11-24 22:44:46] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-11-24 22:44:46] |               24 |               24 |            24 |                       1 |                       2 |                1.666667 |
+[2025-11-24 22:44:46] -------------------------------------------------------------------------------------------------------------------------------------
+[2025-11-24 22:44:46] --------------------------------------------------------------------------------------------------------------------------------
+[2025-11-24 22:44:46] | Elapsed Time |        Used Memory |       #Simulations | Probing Set with Highest Information Leakage |  -log10(p) |  Status |
+[2025-11-24 22:44:46] --------------------------------------------------------------------------------------------------------------------------------
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        1024 / 9383 |                          \u_masked_and.s1(3) |   0.573439 |    OKAY |
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        2048 / 9383 |                          \u_masked_and.s1(3) |   0.098246 |    OKAY |
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        3072 / 9383 |                         \u_masked_and.p11(3) |   0.089791 |    OKAY |
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        4096 / 9383 |                         \u_masked_and.p11(3) |   0.076969 |    OKAY |
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        5120 / 9383 |                         \u_masked_and.p11(3) |   0.273405 |    OKAY |
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        6144 / 9383 |                         \u_masked_and.p11(3) |   0.287157 |    OKAY |
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        7168 / 9383 |                          \u_masked_and.s1(3) |   0.153807 |    OKAY |
+[2025-11-24 22:44:46] |   0-00:00:00 |   0TB    0GB 018MB |        8192 / 9383 |                          \u_masked_and.s1(3) |   0.185097 |    OKAY |
