@@ -1,3 +1,6 @@
+#PROLEAD VERSION
+
+
 # Command line arguments:
 # $1: The projects hardware description language (either VHDL or Verilog)
 # $2: The path to the rtl code. All files must be in one directory
